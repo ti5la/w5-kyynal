@@ -1,0 +1,246 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&family=Open+Sans:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+
+
+.body {
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center
+}
+
+.intro-image {
+    background-image: url('../img/candle1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-image__text a {
+    color: rgb(255, 124, 1);
+    background-color: rgba(0, 0, 0, 0.623);
+    text-decoration: none;
+    border: 2px solid rgba(255, 124, 1, 0.753);
+    display: inline-block;
+    font-size: 2.6rem;
+    padding: 2rem;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    animation-name: moveinleft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveinleft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+
+.intro-image__text a:hover {
+    transform:scale(1.2);
+}
+
+
+.intro-text {
+    height: 350px;
+    margin-top: -1rem;
+    margin-bottom: -1.5rem;
+    margin-left: -1rem;
+    padding: 0 15rem;
+    color: rgb(255, 124, 1);
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(53% 0, 83% 4%, 100% 0, 100% 96%, 61% 94%, 29% 95%, 0 93%, 1% 0, 28% 4%);
+}
+
+.intro-text__textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.intro-text__textbox p {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+.packaging-image {
+    height: 450px;
+    background-image: url(../img/candle2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.packaging-image__text a {
+    color: rgba(0, 0, 0, 0.781);
+    background-color: rgba(189, 147, 57, 0.582);
+    text-decoration: none;
+    border: 2px solid rgba(0, 0, 0, 0.521);
+    display: inline-block;
+    font-size: 2.6rem;
+    padding: 2rem;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    animation-name: moveinright;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+.packaging-image__text a:hover {
+    transform:scale(1.2);
+}
+
+@keyframes moveinright {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+
+}
+
+
+.packaging-image__text a:hover {
+    transform: scale(1.2);
+}
+
+.packaging-text {
+    height: 350px;
+    padding: 0 15rem;
+    margin-top: -1rem;
+    margin-bottom: -1.5rem;
+    margin-left: -1rem;
+    color: rgba(0, 0, 0, 0.781);
+    background-color: rgb(255, 143, 246);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(75% 4%, 100% 0, 100% 93%, 68% 100%, 25% 94%, 0 100%, 0 0);}
+
+.packaging-text__textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.packaging-text__textbox p {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.tutorials-image {
+    height: 500px;
+    background-image: url(../img/candle3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutorials-image__text a {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 172, 172, 0.445);
+    text-decoration: none;
+    border: 2px solid rgba(0, 0, 0, 0.938);
+    display: inline-block;
+    font-size: 2.6rem;
+    padding: 2rem;
+    text-transform: uppercase;
+    animation-name: moveinleft2;
+    transition: all 0.5s ease-in-out;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+.packaging-image__text a:hover {
+    transform:scale(1.2);
+}
+
+@keyframes moveinleft2 {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+
+.tutorials-image__text a:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    height: 250px;
+    font-size: 2rem;
+    padding-top: 2rem;
+    margin-top: -1rem;
+    margin-left: -1rem;
+    color: rgb(255, 124, 1);
+    background-color: rgb(0, 0, 0);
+    clip-path: polygon(17% 6%, 100% 0, 100% 100%, 68% 100%, 26% 100%, 0 100%, 0 0);
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer ul li a {
+    color: rgb(255, 124, 1);
+    text-decoration: none;
+}
+
+.footer ul li:hover {
+    transform: scale(1.2);
+    
+}
